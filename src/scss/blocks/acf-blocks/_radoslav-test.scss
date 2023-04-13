@@ -1,0 +1,114 @@
+//----------------------------------------
+// Radoslav Test - ACF Custom Block
+// Title and boxes grid
+//----------------------------------------
+
+// Color Palette Variables
+$green-darker: #96ceb4;
+$green: #88d8b0;
+$lemon: #ffeead;
+$sun: #ffcc5c;
+$red: #ff6f69;
+
+.radoslav-test {
+	padding: 3rem 0;
+
+	.container {
+		max-width: 1200px;
+		margin: 0 auto;
+		padding: 0 16px;
+	}
+
+	&__boxes {
+		display: flex;
+		flex-direction: column;
+
+		@media ( min-width: 768px ) {
+			flex-direction: row;
+			display: grid;
+			grid-template-columns: 1fr 1fr 1fr;
+			column-gap: 30px;
+		}
+	}
+
+	&__box {
+		margin-bottom: 3.2rem;
+		text-align: center;
+		display: flex;
+		flex-direction: column;
+
+		@media ( min-width: 768px ) {
+			margin-bottom: 4rem;
+		}
+
+		h3 {
+			font-size: 1.2rem;
+			line-height: 1;
+			color: $red;
+			font-weight: 700;
+
+			@media ( min-width: 768px ) {
+				font-size: 1.6rem;
+			}
+
+			@media ( min-width: 1152px ) {
+				font-size: 1.8rem;
+			}
+		}
+
+		.button {
+			display: inline-block;
+			background: $green;
+			color: #fff;
+			text-decoration: none;
+			padding: 0.6rem 1.5rem;
+			cursor: pointer;
+			box-shadow: 3px 3px 0 $red;
+			transition: 100ms ease-in;
+			margin: auto auto 0;
+
+			@media ( min-width: 1152px ) {
+				font-size: 1.1rem;
+			}
+
+			&:active {
+				box-shadow: none;
+				transform: translate( 3px, 3px );
+			}
+		}
+	}
+
+	h2 {
+		text-align: center;
+		font-size: 2.2rem;
+		margin-bottom: 3.5rem;
+		color: $red;
+		font-weight: 700;
+
+		@media ( min-width: 768px ) {
+			font-size: 2.6rem;
+			margin-bottom: 4.5rem;
+		}
+
+		@media ( min-width: 1152px ) {
+			font-size: 3rem;
+		}
+	}
+
+	img {
+		max-width: 115px;
+		aspect-ratio: 1/1;
+		margin: 0 auto 1.4rem;
+
+		@media ( min-width: 768px ) {
+			max-width: 40%;
+		}
+	}
+
+	p {
+		@media ( min-width: 1152px ) {
+			font-size: 1.1rem;
+			margin-bottom: 2rem;
+		}
+	}
+}

@@ -10,7 +10,7 @@ $title = get_field( 'title' );
 
 <section class="radoslav-test">
     <div class="container">
-        <h1><?php echo $title; ?></h1>
+        <h2><?php echo $title; ?></h2>
         <?php
             if( have_rows( 'boxes' ) ): 
         ?>
